@@ -86,7 +86,7 @@ PIPELINE_SASS_ARGUMENTS = '--debug-info --require {proj_dir}/static/sass/bourbon
 FEATURES['AUTOMATIC_VERIFY_STUDENT_IDENTITY_FOR_TESTING'] = True
 FEATURES['ENABLE_PAYMENT_FAKE'] = True
 
-CC_PROCESSOR_NAME = 'CyberSource2'
+"""CC_PROCESSOR_NAME = 'CyberSource2'
 CC_PROCESSOR = {
     'CyberSource2': {
         "PURCHASE_ENDPOINT": '/shoppingcart/payment_fake/',
@@ -94,7 +94,7 @@ CC_PROCESSOR = {
         "ACCESS_KEY": 'abcd123',
         "PROFILE_ID": 'edx',
     }
-}
+}"""
 
 ########################### External REST APIs #################################
 FEATURES['ENABLE_OAUTH2_PROVIDER'] = True

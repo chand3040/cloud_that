@@ -77,7 +77,7 @@ class Command(BaseCommand):
         if options['force']:
             valid_statuses = [getattr(CertificateStatuses, options['force'])]
         else:
-            valid_statuses = [CertificateStatuses.unavailable]
+            valid_statuses = [CertificateStatuses.deleted,CertificateStatuses.deleting,CertificateStatuses.downloadable,CertificateStatuses.error,CertificateStatuses.generating,CertificateStatuses.notpassing,CertificateStatuses.regenerating,CertificateStatuses.restricted,CertificateStatuses.unavailable]
 
         # Print update after this many students
 
